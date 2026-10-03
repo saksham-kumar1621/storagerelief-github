@@ -11,6 +11,8 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4.svg?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-10b981.svg?style=for-the-badge)](LICENSE)
 
+> 📦 **Instant One-Click Install:** You don't need to compile from source! The ready-to-use Windows installer is included directly in this repository: [**`StorageRelief_Setup.exe`**](StorageRelief_Setup.exe) (3.4 MB).
+
 </div>
 
 ---
@@ -79,14 +81,17 @@ graph TD
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start & Installation
 
-### 1. Pre-built Binaries (Easiest)
-Download the latest pre-compiled releases from the [Releases](https://github.com/USERNAME/StorageRelief/releases) page:
-- **`StorageRelief_Setup.exe`**: Standard Windows installer with Start Menu shortcut.
-- **`StorageRelief.exe`**: Portable standalone executable (no installation required).
+### Option 1: Direct Windows Setup (Easiest — Ready to Run!)
+The official compiled installer is included directly in this repository:
+- 📥 **Run Installer:** Double-click [**`StorageRelief_Setup.exe`**](StorageRelief_Setup.exe) to install StorageRelief with Start Menu and Desktop shortcuts.
+- **Installer Size:** Only 3.4 MB (ultra-compact NSIS package).
+- **Requirements:** 64-bit Windows 10 or 11. No compilation, Node.js, or Rust setup required!
 
-### 2. Building from Source
+---
+
+### Option 2: Building from Source
 
 #### Prerequisites
 - [Node.js 18+](https://nodejs.org)
@@ -121,6 +126,7 @@ The compiled standalone executable and setup wizard will be generated in your pr
 
 ```
 StorageRelief/
+├── StorageRelief_Setup.exe      # 📦 Official one-click Windows Setup Installer (3.4 MB)
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.yml       # Bug report issue form
@@ -128,7 +134,7 @@ StorageRelief/
 │   ├── workflows/
 │   │   └── release.yml          # Automated CI/CD release workflow
 │   └── pull_request_template.md # PR guidelines
-├── assets/                      # Graphics and icons
+├── assets/                      # Graphics, icons and logo
 ├── src/                         # Clean UI Frontend
 │   ├── index.html               # Semantic glassmorphic layout
 │   ├── main.js                  # Reactive controller & IPC calls

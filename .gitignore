@@ -1,31 +1,57 @@
-# Dependencies
+# ============================================
+# StorageRelief - Git Ignore Rules
+# ============================================
+
+# Node / Frontend
 node_modules/
-package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+
+# Rust / Cargo
+target/
+src-tauri/target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# Tauri Generated Schemas & Cache
+src-tauri/gen/schemas/
+gen/
+
+# Compiled Binaries & Installers
+*.exe
+*.msi
+*.dll
+*.pdb
+*.zip
+*.tar.gz
+*.7z
+
+# Explicitly track the official Windows installer
+!StorageRelief_Setup.exe
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.driveupload
+err.log
+out.log
+storage_relief.log
+
+# IDEs & Operating System
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosv
+*.sln.docstates
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # Environment
 .env
-.env.local
-.env.*.local
-
-# Build
-dist/
-build/
-out/
-
-# Logs
-*.log
-npm-debug.log*
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Coverage
-coverage/
-.nyc_output/
+.env.*
+!.env.example
