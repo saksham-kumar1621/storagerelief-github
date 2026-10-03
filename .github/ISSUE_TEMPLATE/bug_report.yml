@@ -1,0 +1,61 @@
+name: 🐛 Bug Report
+description: Report a reproducible bug or unexpected behavior in StorageRelief
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please provide as much detail as possible to help us diagnose and fix the problem.
+
+  - type: input
+    id: os-version
+    attributes:
+      label: Windows OS Version & Build
+      placeholder: "e.g., Windows 11 Pro 23H2 (Build 22631)"
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: StorageRelief Version
+      placeholder: "e.g., v1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what happened.
+      placeholder: "The scanner froze when scanning folder X or showed an unexpected error message..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps To Reproduce
+      description: How can we reproduce this issue?
+      value: |
+        1. Open StorageRelief
+        2. Click 'Scan Drive'
+        3. Select item '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: log-output
+    attributes:
+      label: App Log / Console Output (if available)
+      description: Contents of `%LOCALAPPDATA%\com.storagerelief.app\storage_relief.log`
+      render: shell

@@ -1,0 +1,32 @@
+name: 💡 Feature Request
+description: Propose a new storage cleanup module, scan rule, or UI improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to make StorageRelief even better? Tell us about new bloatware types, caches, or optimization tools you want added!
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Is your feature request related to a specific storage problem or app?
+      description: "e.g., App XYZ leaves 20 GB of shader cache in AppData after uninstalling."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Describe the Solution You'd Like
+      description: A clear and concise description of how StorageRelief should detect and handle it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Any Alternative Solutions or Workarounds?
+      description: How do you currently handle or clean this manually?
+    validations:
+      required: false

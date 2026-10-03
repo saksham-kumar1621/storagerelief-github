@@ -1,0 +1,26 @@
+{
+  "name": "storage-relief",
+  "version": "1.0.0",
+  "description": "High-performance native Windows storage optimizer that detects and cleans ghost app versions, build caches, and hidden disk waste.",
+  "private": true,
+  "type": "module",
+  "author": "StorageRelief Contributors",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "tauri": "tauri"
+  },
+  "keywords": [
+    "tauri",
+    "rust",
+    "windows",
+    "storage-cleaner",
+    "disk-cleanup",
+    "system-optimizer",
+    "storage-relief"
+  ],
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
